@@ -1,16 +1,15 @@
 #!/bin/python3
 #python3
-def sum_of_multiples(n):
-    total = 0
-    for i in range(n):
-        if i % 3 == 0 or i % 5 == 0:
-            total += i
-    return total
+def ap(x):
+    result=x*(x+1)//2
+    return result
 
-# Test with N = 10
-N = 10
-N1=100
-result = sum_of_multiples(N)
-print(result)
-result = sum_of_multiples(N1)
-print(result)
+n=int(input())
+while n!=0:
+     nu=int(input())
+     nu-=1
+     a=nu//3
+     b=nu//5
+     c=nu//15
+     print(3*ap(a)+5*ap(b)-15*ap(c))
+     n-=1
